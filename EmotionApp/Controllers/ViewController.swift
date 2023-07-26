@@ -31,6 +31,8 @@ class MoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBackgroundColors()
+        emojiViewSettings()
+        //        firstEmoji.image = UIImage(named: "emoji1")
         
     }
     
@@ -40,6 +42,13 @@ class MoodViewController: UIViewController {
         }
     }
     
+    func emojiViewSettings() {
+        for (i, j) in emojiArray.enumerated() {
+            if let emoji = Status.bgColor(rawValue: i+1)?.emojiSetup {
+                j.image = emoji
+            }
+        }
+    }
     
     @IBAction func firstButtonTapped(_ sender: UIButton) {
         scoreArray[sender.tag-1] += 1
@@ -53,10 +62,5 @@ class MoodViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
 }
 

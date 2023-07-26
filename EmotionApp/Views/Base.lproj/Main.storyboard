@@ -32,7 +32,7 @@
                                                     <action selector="firstButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEM-YY-miR"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji1" translatesAutoresizingMaskIntoConstraints="NO" id="lR3-U8-4aT">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lR3-U8-4aT">
                                                 <rect key="frame" x="170" y="41" width="53" height="51"/>
                                             </imageView>
                                         </subviews>
@@ -57,7 +57,7 @@
                                                     <action selector="firstButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yg2-u0-yps"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji2" translatesAutoresizingMaskIntoConstraints="NO" id="8bV-pl-aDp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bV-pl-aDp">
                                                 <rect key="frame" x="170.66666666666666" y="42.333333333333343" width="52" height="48"/>
                                             </imageView>
                                         </subviews>
@@ -82,7 +82,7 @@
                                                     <action selector="firstButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezs-zC-dbH"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji3" translatesAutoresizingMaskIntoConstraints="NO" id="9gX-vK-STr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gX-vK-STr">
                                                 <rect key="frame" x="171.66666666666666" y="47.666666666666686" width="50" height="38"/>
                                             </imageView>
                                         </subviews>
@@ -107,7 +107,7 @@
                                                     <action selector="firstButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Wd-Rf-1hZ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji4" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-Ov-V3f">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-Ov-V3f">
                                                 <rect key="frame" x="170.66666666666666" y="42.666666666666686" width="52" height="48"/>
                                             </imageView>
                                         </subviews>
@@ -132,7 +132,7 @@
                                                     <action selector="firstButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2Q-bo-teK"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji5" translatesAutoresizingMaskIntoConstraints="NO" id="1Bq-PD-QFJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Bq-PD-QFJ">
                                                 <rect key="frame" x="169.66666666666666" y="41.666666666666742" width="54" height="50"/>
                                             </imageView>
                                         </subviews>
@@ -182,7 +182,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JpJ-iZ-JLy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgk-Co-hB5">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -438,11 +438,25 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOr-ue-R65">
+                                <rect key="frame" x="143" y="613" width="107" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="n4e-Yf-pKI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="리셋하기"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="mPv-O0-Hft" eventType="touchUpInside" id="fs8-w2-Yql"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7LJ-x1-vL3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7LJ-x1-vL3" firstAttribute="trailing" secondItem="i6T-2w-BGq" secondAttribute="trailing" constant="15" id="TXc-An-ndp"/>
+                            <constraint firstItem="LOr-ue-R65" firstAttribute="top" secondItem="i6T-2w-BGq" secondAttribute="bottom" constant="50" id="Ucy-ZE-iqY"/>
+                            <constraint firstItem="7LJ-x1-vL3" firstAttribute="trailing" secondItem="LOr-ue-R65" secondAttribute="trailing" constant="143" id="XOG-3q-h9j"/>
+                            <constraint firstItem="LOr-ue-R65" firstAttribute="leading" secondItem="7LJ-x1-vL3" secondAttribute="leading" constant="143" id="hZW-hW-xTm"/>
                             <constraint firstItem="i6T-2w-BGq" firstAttribute="leading" secondItem="7LJ-x1-vL3" secondAttribute="leading" constant="15" id="oby-A0-dov"/>
                             <constraint firstItem="i6T-2w-BGq" firstAttribute="top" secondItem="7LJ-x1-vL3" secondAttribute="top" id="uq7-Ot-QVO"/>
                         </constraints>
@@ -455,6 +469,7 @@
                         <outlet property="firstScore" destination="ABi-Ov-CJH" id="9D2-gX-ciM"/>
                         <outlet property="fourthResult" destination="Yet-iE-gs3" id="fID-Pu-uQN"/>
                         <outlet property="fourthScore" destination="dcd-eJ-INP" id="t4F-Pc-QQw"/>
+                        <outlet property="resetButton" destination="LOr-ue-R65" id="qQZ-IZ-NOb"/>
                         <outlet property="secondResult" destination="ME9-hm-CNw" id="kII-u7-1zL"/>
                         <outlet property="secondScore" destination="yAx-8T-2jO" id="O6A-32-B9L"/>
                         <outlet property="thirdResult" destination="eKo-pE-oim" id="lW9-JU-cng"/>
@@ -463,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqi-OT-ldh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="199"/>
+            <point key="canvasLocation" x="1632.824427480916" y="198.59154929577466"/>
         </scene>
         <!--작성하기-->
         <scene sceneID="YOB-Kd-w9x">
@@ -522,11 +537,6 @@
     </scenes>
     <resources>
         <image name="chart.bar.fill" catalog="system" width="128" height="90"/>
-        <image name="emoji1" width="53" height="51"/>
-        <image name="emoji2" width="52" height="48"/>
-        <image name="emoji3" width="50" height="38"/>
-        <image name="emoji4" width="52" height="48"/>
-        <image name="emoji5" width="54" height="50"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

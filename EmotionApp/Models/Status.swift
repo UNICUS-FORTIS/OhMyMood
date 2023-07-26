@@ -19,7 +19,6 @@ struct Status {
         case fourth = 4
         case fifth = 5
         
-        
         var backgroundColor: UIColor {
             switch self {
             case .first :
@@ -34,5 +33,21 @@ struct Status {
                 return UIColor(red: 0.07, green: 0.45, blue: 0.87, alpha: 1.00)
             }
         }
+        
+        var emojiSetup: UIImage? {
+            switch self {
+            case .first:
+                return UIImage(named: "emoji1")
+            case .second:
+                return UIImage(named: "emoji2")
+            case .third:
+                return UIImage(named: "emoji3")
+            case .fourth:
+                return UIImage(named: "emoji4")
+            case .fifth:
+                return UIImage(named: "emoji5")
+            }
+        }
     }
 }
+
